@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/textViewWelcomeLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO HABIT TRACKER 3.0 !"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(please log in below)"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Username Input Field -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:textStyle="bold"
+        android:padding="12dp"/>
+
+    <!-- Sign-up Link -->
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register here"
+        android:textColor="#6200EE"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:onClick="openRegisterActivity"/>
+
+</LinearLayout>

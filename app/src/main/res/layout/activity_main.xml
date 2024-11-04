@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextHabitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Habit Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextHabitDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Habit Description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextHabitFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Frequency (times per week)"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/buttonSetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Time"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewSelectedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="No time set"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:layout_gravity="center" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkBoxMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+
+        <CheckBox
+            android:id="@+id/checkBoxThursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thursday" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friday" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturday" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonAddHabit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Add Habit"
+        android:layout_gravity="center" />
+
+    <ListView
+        android:id="@+id/listViewHabits"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:dividerHeight="8dp"/>
+</LinearLayout>
